@@ -1,0 +1,40 @@
+
+.links-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links-container::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: black;
+}
+
+.link {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4.5px; 
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #f2994a; 
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.link.active::after {
+  transform: scaleX(1);
+}
+

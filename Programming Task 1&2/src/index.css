@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-gradient{
+    background: linear-gradient(165deg, #fceedb 50%, #ffffff 50%);
+}
+
+.label-text{
+    @apply font-semibold text-xl
+}
+
+.placeholder-text{
+    @apply p-3 border mb-5 border-black text-lg rounded-lg placeholder-black
+}
